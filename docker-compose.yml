@@ -7,9 +7,9 @@ services:
       - "8000:8000" # もしWebサーバーを起動するならポートを公開
     volumes: # ホストのコードをマウントしたい場合に使用（開発時など）
       - ./app:/app/app
-    # command:       # Dockerfile の CMD を上書きする場合はこちら
-    #   - "python"
-    #   - "my_alternative_main.py"
+    command: # Dockerfile の CMD を上書きする場合はこちら
+      - "python"
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
     restart: unless-stopped
+    tty: true
