@@ -1,5 +1,5 @@
 # ベースイメージを指定
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # 作業ディレクトリを設定
 WORKDIR /app
@@ -8,6 +8,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     git \
     build-essential \
+    # 簡易データベース
+    sqlite3 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
