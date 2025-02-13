@@ -1,6 +1,9 @@
 langchain
+langchain_experimental
+langchain_community
+langchain_openai
 openai
 numpy
 python-dotenv
-langchain-community
 pandas
+pydantic==2.9.2

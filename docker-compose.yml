@@ -7,6 +7,7 @@ services:
       - "8000:8000" # もしWebサーバーを起動するならポートを公開
     volumes: # ホストのコードをマウントしたい場合に使用（開発時など）
       - ./app:/app/app
+      - ./data:/app/data
     command: # Dockerfile の CMD を上書きする場合はこちら
       - "python"
     environment:

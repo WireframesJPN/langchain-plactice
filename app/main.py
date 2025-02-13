@@ -6,7 +6,7 @@ from langchain.llms import OpenAI
 # load_dotenv()
 
 # 環境変数からAPIキーを取得
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("openai_api_key")
 
 print("API Keyを取得-------")
 print(api_key)

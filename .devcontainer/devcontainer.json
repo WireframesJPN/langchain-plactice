@@ -1,0 +1,14 @@
+{
+  "name": "LangChain Practice",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "langchain_app",
+  "workspaceFolder": "/app",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-python.vscode-pylance"]
+    }
+  }
+}
