@@ -7,3 +7,9 @@ numpy
 python-dotenv
 pandas
 pydantic==2.9.2
+langgraph
+langsmith
+# 画像を表示するため
+IPython
+# グラフを表示するためのやつ
+grandalf
